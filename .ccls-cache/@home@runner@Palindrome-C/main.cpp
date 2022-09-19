@@ -4,10 +4,10 @@
 // Define is_palindrome() here:
 bool is_palindrome(std::string text){
   std::string reverse = "";
-  int length = text.size();                 // y not -1 here?!?!?!?!
+  int length = text.size() - 1;                 // y not -1 here?!?!?!?!
 
-  for (int i = length; i > 0; i--){         // or y not -1 here?!?!?!
-    reverse += text[i-1];		    // works here
+  for (int i = length; i > -1; i--){         // or y not -1 here?!?!?!
+    reverse += text[i];		    // works here
     }
   if (reverse == text){
     return true;
